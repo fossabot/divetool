@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run check-lock-files
+npm run check-commit
+npx -p prettier@latest -p pretty-quick pretty-quick --check
