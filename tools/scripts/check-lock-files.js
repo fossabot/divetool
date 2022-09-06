@@ -4,23 +4,23 @@ function checkLockFiles() {
   const errors = [];
   if (fs.existsSync('yarn.lock')) {
     errors.push(
-      'Invalid occurence of "yarn.lock" file. Please remove it and use only "package-lock.json"'
+      'Invalid occurence of "yarn.lock" file. Please remove it and use only "pnpm-lock.yaml"'
     );
   }
-  if (fs.existsSync('pnpm-lock.yaml')) {
+  if (fs.existsSync('package-lock.json')) {
     errors.push(
-      'Invalid occurence of "pnpm-lock.yaml" file. Please remove it and use only "yarn.lock"'
+      'Invalid occurence of "package-lock.json" file. Please remove it and use only "pnpm-lock.yaml"'
     );
   }
   try {
-    const content = fs.readFileSync('package-lock.json', 'utf-8');
+    const content = fs.readFileSync('pnpm-lock.yaml', 'utf-8');
     if (content.match(/localhost:487/)) {
       errors.push(
-        'The "package-lock.json" has reference to local yarn repository ("localhost:4873"). Please use "registry.yarnpkg.com" in "package-lock.json"'
+        'The "pnpm-lock.yaml" has reference to local yarn repository ("localhost:4873"). Please use "registry.yarnpkg.com" in "pnpm-lock.yaml"'
       );
     }
   } catch {
-    errors.push('The "package-lock.json" does not exist or cannot be read');
+    errors.push('The "pnpm-lock.yaml" does not exist or cannot be read');
   }
   return errors;
 }
