@@ -14,7 +14,6 @@ module.exports = {
   ],
 
   scopes: [
-    { name: 'web-users', description: 'anything web-users specific' },
     {
       name: 'repo',
       description: 'anything related to managing the repo itself',
