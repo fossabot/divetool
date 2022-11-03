@@ -14,6 +14,7 @@ module.exports = {
   ],
 
   scopes: [
+    { name: 'web', description: 'anything web related' },
     {
       name: 'repo',
       description: 'anything related to managing the repo itself',
