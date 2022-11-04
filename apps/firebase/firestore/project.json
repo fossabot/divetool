@@ -1,0 +1,26 @@
+{
+  "name": "firebase-firestore",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/firebase/firestore/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "firebase emulators:start --only firestore --project staging"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "firebase deploy --only firestore --project staging"
+      },
+      "configurations": {
+        "production": {
+          "command": "firebase deploy --only firestore --project production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

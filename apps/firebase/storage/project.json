@@ -1,0 +1,26 @@
+{
+  "name": "firebase-storage",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/firebase/storage/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "firebase emulators:start --only storage"
+      }
+    },
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "firebase deploy --only storage --project divetool-staging"
+      },
+      "configurations": {
+        "production": {
+          "command": "firebase deploy --only storage --project divetool"
+        }
+      }
+    }
+  },
+  "tags": []
+}

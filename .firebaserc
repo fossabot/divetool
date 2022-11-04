@@ -1,6 +1,8 @@
 {
-  "targets": {
-  },
   "projects": {
-  }
+    "staging": "divetool-staging",
+    "production": "divetool"
+  },
+  "targets": {},
+  "etags": {}
 }

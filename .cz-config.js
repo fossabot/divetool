@@ -16,6 +16,23 @@ module.exports = {
   scopes: [
     { name: 'web', description: 'anything web related' },
     {
+      name: 'firebase',
+      description:
+        'anything firebase related (eg. configurations, multiple firebase changes, etc.)',
+    },
+    {
+      name: 'firebase-firestore',
+      description: 'anything firebase-firestore related',
+    },
+    {
+      name: 'firebase-storage',
+      description: 'anything firebase-storage related',
+    },
+    {
+      name: 'firebase-emulators',
+      description: 'anything firebase-emulators related',
+    },
+    {
       name: 'repo',
       description: 'anything related to managing the repo itself',
     },
