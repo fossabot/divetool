@@ -1,94 +1,51 @@
+<p align="center">
+  <a href="https://www.budibase.com">
+    <img alt="Budibase" src="https://github.com/divetool.png" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  DiveTool
+</h1>
 
+<h3 align="center">
+  The companion for a diver. For divers, by divers.
+</h3>
+<p align="center">
+  DiveTool is an open source diving utilities application, and the easiest way to carry a pocket (surface?) buddy with you.
+</p>
 
-# Divetool
+<h3 align="center">
+🪸 🤿 🫧
+</h3>
 
-This project was generated using [Nx](https://nx.dev).
+---
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+<div style="text-align: center;">
 
-🔎 **Smart, Fast and Extensible Build System**
+[![ci](https://github.com/divetool/divetool/actions/workflows/ci.yml/badge.svg)](https://github.com/divetool/divetool/actions/workflows/ci.yml)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-## Adding capabilities to your workspace
+</div>
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+## Support
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+Reach out to the project maintainers at one of the following places:
 
-Below are our core plugins:
+- [GitHub Discussions](https://github.com/divetool/divetool/discussions)
+- Our [#support](https://discord.com/channels/1038293874189279252/1038294430815375502) channel in the [DiveTool Community](https://discord.gg/Ug3cb4QD3f) discord server.
+- If you need to privately contact the project maintainers, DM them through our [DiveTool Community](https://discord.gg/Ug3cb4QD3f) discord server.
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+## Contributing
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are **greatly appreciated**.
 
-## Generate an application
+## Code of conduct
 
-Run `nx g @nrwl/react:app my-app` to generate an application.
+DiveTool is dedicated to providing a welcoming, diverse, and harrassment-free experience for everyone. We expect everyone in the DiveTool community to abide by our [**Code of Conduct**](CODE_OF_CONDUCT.md). Please read it.
 
-> You can use any of the plugins above to generate applications as well.
+## License
 
-When using Nx, you can create multiple applications and libraries in the same workspace.
+This project is licensed under the **MIT License**.
 
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@divetool/mylib`.
-
-## Development server
-
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+See [LICENSE](LICENSE) for more information.
