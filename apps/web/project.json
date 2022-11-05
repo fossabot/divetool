@@ -80,28 +80,41 @@
       "executor": "nx:run-commands",
       "dependsOn": ["build"],
       "options": {
-        "command": "nx deploy-cloudflare web --project-name divetool-staging"
+        "command": "nx deploy-cloudflare web"
       },
       "configurations": {
         "production": {
-          "command": "nx deploy-cloudflare web --project-name divetool"
+          "command": "nx deploy-cloudflare web --prod"
         }
       }
     },
     "deploy-cloudflare": {
       "executor": "nx:run-commands",
+      "defaultConfiguration": "staging",
       "options": {
-        "command": "wrangler pages publish dist/apps/web"
+        "command": "wrangler pages publish dist/apps/web --project-name {args.environment}"
+      },
+      "configurations": {
+        "staging": {
+          "args": "--environment divetool-staging"
+        },
+        "production": {
+          "args": "--environment divetool"
+        }
       }
     },
     "deploy-firebase": {
       "executor": "nx:run-commands",
+      "defaultConfiguration": "staging",
       "options": {
-        "command": "firebase deploy --only hosting --project staging"
+        "command": "firebase deploy --only hosting --project {args.projectName}"
       },
       "configurations": {
+        "staging": {
+          "args": "--projectName staging"
+        },
         "production": {
-          "command": "firebase deploy --only hosting --project production"
+          "args": "--projectName production"
         }
       }
     }
