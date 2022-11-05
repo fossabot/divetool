@@ -20,7 +20,7 @@
 
 ---
 
-<div style="text-align: center;">
+<div align="center" style="text-align: center;">
 
 [![ci](https://github.com/divetool/divetool/actions/workflows/ci.yml/badge.svg)](https://github.com/divetool/divetool/actions/workflows/ci.yml)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
