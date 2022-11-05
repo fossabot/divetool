@@ -2,7 +2,7 @@ name: 📖 Documentation issue
 description: Suggestions on how we can improve the documentation
 labels: [documentation, triage]
 body:
-  - type: input
+  - type: dropdown
     id: type
     attributes:
       label: What type of documentation issue are you reporting?
